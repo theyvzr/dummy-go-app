@@ -9,9 +9,9 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /docker-gs-ping
+RUN go build -o /dummy-go-app
 
 EXPOSE 6683
 
-CMD [ "/docker-gs-ping" ]
+CMD [ "/dummy-go-app" ]
 
